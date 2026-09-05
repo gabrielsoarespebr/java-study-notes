@@ -65,11 +65,14 @@ Car@2f333739</code></pre>
 </table>
 
 > [!NOTE]
-This happens because println() calls the toString() method when given an object.
-Every Java class inherits a toString() method from Object, unless the class overrides it.
-The default implementation in Object returns a string containing the object's class name and hash code:
-```java
-public String toString() {
-    return getClass().getName() + "@" + Integer.toHexString(hashCode());
-}
-```
+> This happens because println() calls the toString() method when given an object.
+> 
+> Every Java class inherits a toString() method from Object, unless the class overrides it.
+> 
+> The default implementation in Object returns a string containing the object's class name and hash code:
+> 
+> ```java
+> public String toString() {
+>     return getClass().getName() + "@" + Integer.toHexString(hashCode());
+> }
+> ```
