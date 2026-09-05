@@ -1,8 +1,13 @@
 # Methods
 
-Return a primitive value -> a copy of the value is returned 
+| Return type | What is returned |
+|---|---|
+| Primitive | The primitive value |
+| Object | A reference to the object |
 
-Return an object -> a reference to the object is returned instead of a copy of it
+> [!IMPORTANT]
+> Returning an object does **not** return a copy of the object.
+> The returned reference refers to the same object.
 
 <table>
 <tr>
